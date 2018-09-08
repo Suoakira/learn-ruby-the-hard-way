@@ -5,14 +5,13 @@ def loop_iterator(number_of_times)
       if counter == number_of_times
         break
       else
-        puts phrase
+        puts "#{phrase} #{counter}"
         counter += 1
       end
     end
 end
 
 def times_iterator(number_of_times)
-
   phrase = "This is the Times iterator!"
   number_of_times.times do
     puts phrase
@@ -20,10 +19,10 @@ def times_iterator(number_of_times)
 end
 
 def while_iterator(number_of_times)
-  phrase = "This is the while itertor!!"
+  phrase = "This is the while itertor!"
   counter = 0
   while number_of_times != counter
-    puts phrase
+    puts "#{phrase} #{counter}"
     counter += 1
   end
 end
@@ -32,17 +31,16 @@ def until_iterator(number_of_times)
   phrase = "This is the until iterator!"
   counter = 0
   until counter ==  number_of_times
-    puts phrase
+    puts "#{phrase} #{counter}"
     counter += 1
   end
-
 end
 
 def for_iterator(number_of_times)
   range = 1..number_of_times
   phrase = "This is the for iterator!"
   for items in range
-    puts phrase
+    puts "#{phrase} #{items}"
   end
 end
 
