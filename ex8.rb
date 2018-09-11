@@ -11,3 +11,5 @@ puts formatter % {
   third: "But it didn't sing.",
   fourth: "So i said goodnight"
 }
+
+#advantage to the %{} is that you can apply multiple formats to multiple values.
